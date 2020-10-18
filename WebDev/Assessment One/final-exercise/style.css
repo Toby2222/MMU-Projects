@@ -72,7 +72,7 @@ header, nav{
 }
 
 
-a:link, a:hover, a:visited, a:active{
+nav a:link, nav a:hover, nav a:visited, nav a:active{
     text-decoration: none;
     font-size: 1.2rem;
 }
