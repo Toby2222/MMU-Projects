@@ -1,0 +1,83 @@
+html{
+    font-size: 10px;
+    margin: 0;
+}
+
+body{
+    font-family: 'Oswald', sans-serif;
+    background-color: #cacaca;
+    color:#363535;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+h1,h2 {
+    font-family: 'Oswald', sans-serif;
+    background-color: #cacaca;
+    color:#363535;
+    margin: 0 auto;
+}
+
+
+h1{
+    padding:0 28%;
+    background-color: blue;
+    color: red;
+}
+
+.page-footer{
+    background-color: black;
+    color: yellow;
+}
+
+a:link {
+    background-color: black;
+    color: yellow;
+}
+
+a:visited {
+    background-color: black;
+    color: yellow;
+}
+a:hover {
+    background-color: black;
+    color: yellow;
+}
+
+.Lecture-Caption{
+    margin:0 auto;
+}
+
+figure{
+    margin:0 25px 25px 0;
+    float: left;
+    display: block;
+}
+
+.menu li {
+    list-style: none;
+    display: inline;
+    margin-right: 20px;
+}
+
+h2{
+    display: inline-block;
+}
+
+.columns{
+    display: inline-block;
+    column-width: 200px;
+    column-gap: 20px;
+    column-count: 3;
+}
+.columns p{
+    margin: 0;
+}
+.p2{
+    height:250px;
+    padding: 8%;
+    display: block;
+    min-width: 680px;
+}

@@ -1,0 +1,94 @@
+/* Add CSS to this file as requested: you can delete this comment. */
+html{
+    font-size: 17px;
+    margin:0;
+    padding:0;
+    font-family: 'Commissioner', sans-serif;
+}
+
+body{
+    background-color: #eff0f1;
+    color:#005;
+    font-size: 1.05rem;
+    line-height: 22px;
+    margin: 0 auto;
+    margin-top: 15px;
+    width:590px;
+}
+
+h1, h2, h3{
+    text-transform: uppercase;
+}
+
+a:link, a:hover, a:visited, a:active{
+    color: #005;
+}
+
+figcaption{
+    font-size: small;
+}
+
+.main-navigation{
+    list-style-type: none;
+    padding:0;
+    margin:0;
+}
+
+.main-navigation li{
+    display: inline-block;
+    margin-left:10px;
+    padding: 2px;
+}
+
+figure{
+    margin-left:0;
+    margin:10px;
+}
+
+table{
+    border-collapse:collapse;
+}
+
+th{
+    text-align:left;
+    padding:0.5rem;
+}
+
+table td{
+    border-top:1px solid #4f4f4f;
+    padding: 0.5rem;
+}
+
+
+/* Non-mandatory styles */
+
+body nav{
+    float:right;
+    margin-top:22px;
+}
+
+header, nav{
+    display: inline-block;
+}
+
+
+a:link, a:hover, a:visited, a:active{
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.main-navigation li a:hover{
+   color:#4f4f4f; 
+}
+
+footer{
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* CV page specific styles */
+
+.personal-profile p{
+    width:550px;
+}
+
