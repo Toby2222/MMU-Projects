@@ -35,12 +35,12 @@ figcaption{
 
 .main-navigation li{
     display: inline-block;
-    padding: 2px;
-    border: 1px solid #eff0f1;
+    padding: 8px;
+    border: 1px solid #005;
 }
 
 figure{
-    margin:10px;
+    margin-left:0;
 }
 
 table{
