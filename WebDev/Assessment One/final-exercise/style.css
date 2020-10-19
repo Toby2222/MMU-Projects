@@ -63,14 +63,8 @@ table td{
 /* Non-mandatory styles */
 
 body nav{
-    float:right;
     margin-top:22px;
 }
-
-header, nav{
-    display: inline-block;
-}
-
 
 nav a:link, nav a:hover, nav a:visited, nav a:active{
     text-decoration: none;
