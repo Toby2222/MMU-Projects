@@ -12,7 +12,7 @@ body{
     font-size: 1.05rem;
     line-height: 22px;
     margin: 0 auto;
-    width:550px;
+    max-width:550px;
 }
 
 h1, h2, h3{
