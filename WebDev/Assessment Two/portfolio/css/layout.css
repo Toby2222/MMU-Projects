@@ -14,6 +14,9 @@ body {
     /* update to suit your type choices */
     color: #000;
     /* base text colour - update to suit your design */
+    background-color: #dedede;
+    padding:0;
+    margin:0;
 }
 
 /* Improves default font styles for forms  */
@@ -61,7 +64,26 @@ p {
 }
 
 /* navigation (using flexbox) */
+    .page-nav{
+        background-color: #ccc;
+        position:sticky;
+        top:0;
+        width:100%;
+    }
+    .page-nav ul{
+        display:flex;
+        text-align: center;
+    }
 
+    .page-nav ul li{
+        list-style-type: none;
+        padding:10px;
+    }
+
+    .page-nav ul li a:hover, .page-nav ul li a:visited, .page-nav ul li a:active, .page-nav ul li a:link{
+        text-decoration: none;
+        color: navy;
+    }
 
 /* page header */
 
