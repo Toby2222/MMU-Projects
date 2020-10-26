@@ -14,15 +14,11 @@ body{
 }
 
 h1,h2 {
-    font-family: 'Oswald', sans-serif;
-    background-color: #cacaca;
-    color:#363535;
     margin: 0 auto;
 }
 
-
 h1{
-    padding:0 28%;
+    text-align: center;
     background-color: blue;
     color: red;
 }
@@ -32,28 +28,13 @@ h1{
     color: yellow;
 }
 
-a:link {
+a:link, a:visited, a:hover{
     background-color: black;
     color: yellow;
-}
-
-a:visited {
-    background-color: black;
-    color: yellow;
-}
-a:hover {
-    background-color: black;
-    color: yellow;
-}
-
-.Lecture-Caption{
-    margin:0 auto;
 }
 
 figure{
     margin:0 25px 25px 0;
-    float: left;
-    display: block;
 }
 
 .menu li {
@@ -62,22 +43,11 @@ figure{
     margin-right: 20px;
 }
 
-h2{
-    display: inline-block;
-}
-
 .columns{
-    display: inline-block;
-    column-width: 200px;
-    column-gap: 20px;
+    column-gap: 36px;
     column-count: 3;
 }
+
 .columns p{
     margin: 0;
-}
-.p2{
-    height:250px;
-    padding: 8%;
-    display: block;
-    min-width: 680px;
 }
