@@ -3,18 +3,22 @@
 
 /* These are some suggested groupings for your stylesheet... */
 
+html{
+    font-size: 10px;
+}
+
 /* Default styling styling for the body.*/
 
 body {
-    font-family: sans-serif;
+    font-family: 'Noto Sans', helvetica, sans-serif;
     /* update with Google font, web safe font and generic fallback */
-    font-size: 100%;
+    font-size: 1.5rem;
     /* the default browser font size is 16px */
-    line-height: 1;
+    line-height: 1.6;
     /* update to suit your type choices */
-    color: #000;
+    color: #FFFDFD;
     /* base text colour - update to suit your design */
-    background-color: #dedede;
+    background-color: #0B3C49;
     padding:0;
     margin:0;
 }
@@ -28,29 +32,35 @@ textarea {
 
 /* box sizing */
 
+* {
+    box-sizing:border-box;
+}
 
 /* flexible content images code */
 
+img {
+    max-width: 100%;
+    height: auto;
+  }
 
 /* element styling (e.g. standard p, h1, h2, a, etc) */
 
 h1,
 h2 {
-    font-weight: normal;
-    font-family: sans-serif;
-    /* Google font, web safe font, generic fallback */
+    font-weight: bold;
+    letter-spacing: 0.3rem;
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 3rem;
     margin: 0;
-    padding: 0;
+    padding: 4px 10px;
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 2.2rem;
     margin: 0;
-    padding: 0;
+    padding: 4px 17px;
 }
 
 h3 {
@@ -60,12 +70,12 @@ h3 {
 
 p {
     margin: 0;
-    padding: 0;
+    padding: 4px 25px;
 }
 
 /* navigation (using flexbox) */
     .page-nav{
-        background-color: #ccc;
+        background-color: #731963;
         position:sticky;
         top:0;
         width:100%;
@@ -73,6 +83,7 @@ p {
     .page-nav ul{
         display:flex;
         text-align: center;
+        margin:0;
     }
 
     .page-nav ul li{
@@ -82,11 +93,26 @@ p {
 
     .page-nav ul li a:hover, .page-nav ul li a:visited, .page-nav ul li a:active, .page-nav ul li a:link{
         text-decoration: none;
-        color: navy;
+        color: #CBD2D0;
     }
 
 /* page header */
 
+.header-content{
+    height: 300px;
+    background-image: url("../img/Optimised-Italy-Width.jpg");
+    font-size: 1.8rem;
+    color: #0B3C49;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+}
+
+.header-content p, .header-content h1{
+    padding:0 35px;
+    line-height: 1.5;
+}
 
 /* main layout */
 
@@ -94,8 +120,12 @@ p {
 /* styling for the section content */
 
 
+
 /* background colours for sections */
 
+.your-topic{
+    background-color: #731963;
+}
 
 /* image gallery media queries and size overrides */
 

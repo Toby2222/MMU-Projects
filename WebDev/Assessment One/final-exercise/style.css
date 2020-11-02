@@ -27,6 +27,7 @@ figcaption{
     font-size: small;
 }
 
+
 .main-navigation{
     list-style-type: none;
     padding:0;
@@ -35,16 +36,37 @@ figcaption{
 
 .main-navigation li{
     display: inline-block;
-    padding: 8px;
-    border: 1px solid #005;
+    padding: 0 8px;
+}
+.main-navigation li:last-child{
+    border-left: 1px solid rgb(27, 27, 75);
+}
+
+.main-navigation li a{
+    text-decoration: none;
 }
 
 figure{
     margin-left:0;
+    margin-right: 0;
+    max-width: 100%;
+
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+ul{
+    width:40%;
+    margin:20px auto;
 }
 
 table{
     border-collapse:collapse;
+    margin:0 auto;
 }
 
 th{
@@ -57,4 +79,10 @@ table td{
     padding: 0.5rem;
 }
 
-
+@media screen and (min-width:510px){
+    .main-navigation{
+        position: absolute;
+        top: 25px;
+        right: 50px;
+    }
+}
