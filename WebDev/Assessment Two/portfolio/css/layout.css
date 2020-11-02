@@ -70,7 +70,7 @@ h3 {
 
 p {
     margin: 0;
-    padding: 4px 25px;
+    padding: 4px 25px 20px 25px;
 }
 
 /* navigation (using flexbox) */
@@ -84,35 +84,69 @@ p {
         display:flex;
         text-align: center;
         margin:0;
+        justify-content: space-between;
+        padding: 0 40px;
+        flex-wrap: wrap;
     }
 
     .page-nav ul li{
+        flex: 1 1 50%;
+        display: flex;
         list-style-type: none;
         padding:10px;
     }
 
-    .page-nav ul li a:hover, .page-nav ul li a:visited, .page-nav ul li a:active, .page-nav ul li a:link{
+    .page-nav ul li+li{
+        border-bottom: 1px solid black;
+        border-left: 1px solid black;
+    }
+    
+
+    .page-nav ul li a:visited, .page-nav ul li a:active, .page-nav ul li a:link{
         text-decoration: none;
         color: #CBD2D0;
+    }
+    .page-nav ul li a:hover{
+        text-decoration: none;
+        color: #727272;
     }
 
 /* page header */
 
-.header-content{
-    height: 300px;
-    background-image: url("../img/Optimised-Italy-Width.jpg");
-    font-size: 1.8rem;
-    color: #0B3C49;
+.page-header{
+    height: 400px;
+    background-image: url("../img/Optimised-Canada.jpg");
+    color: white;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     text-align: center;
+    padding-top: 5px;
+}
+
+.header-content{
+    background-color: rgba(11, 60, 73, 0.4);
 }
 
 .header-content p, .header-content h1{
     padding:0 35px;
     line-height: 1.5;
 }
+
+.header-content h1{
+    font-size: 2.6em;
+}
+
+.header-content p{
+    padding:0 35px 20px 35px;
+    font-size: 1.2em;
+}
+
+.page-header img {
+    border: 4px solid #ddd;
+    height:200px;
+    border-radius: 50%;
+  }
 
 /* main layout */
 
