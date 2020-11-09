@@ -145,10 +145,10 @@ p {
     min-height: 60vh;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .header-content {
-    display: inline;
     max-width: 500px;
     color: #fff;
     text-align: center;
