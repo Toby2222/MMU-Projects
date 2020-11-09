@@ -203,6 +203,11 @@ p {
 
 /* #region background colours for sections */
 
+#about, #topic, #contact, #images{
+    padding-top: 95px;
+    padding-bottom: 70px;
+}
+
 .your-topic {
   background-color: #731963;
 }
