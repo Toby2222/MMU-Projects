@@ -133,7 +133,7 @@ p {
 /* #region page header */
 
 .page-header {
-    background-image: url("https://github.com/Toby2222/MMU-Projects/blob/main/WebDev/Assessment%20Two/portfolio/img/Optimised-Canada.jpg"); 
+    background-image: url("https://raw.githubusercontent.com/Toby2222/MMU-Projects/main/WebDev/Assessment%20Two/portfolio/img/Optimised-Canada.jpg"); 
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
