@@ -1,170 +1,294 @@
-/* TEMPLATE STYLESHEET */
-
 
 /* These are some suggested groupings for your stylesheet... */
-
-html{
-    font-size: 10px;
+html {
+  font-size: 10px;
 }
 
-/* Default styling styling for the body.*/
-
+/* #region Default styling styling for the body.*/
 body {
-    font-family: 'Noto Sans', helvetica, sans-serif;
-    /* update with Google font, web safe font and generic fallback */
-    font-size: 1.5rem;
-    /* the default browser font size is 16px */
-    line-height: 1.6;
-    /* update to suit your type choices */
-    color: #FFFDFD;
-    /* base text colour - update to suit your design */
-    background-color: #0B3C49;
-    padding:0;
-    margin:0;
+  font-family: "Noto Sans", helvetica, sans-serif;
+  /* update with Google font, web safe font and generic fallback */
+  font-size: 1.5rem;
+  /* the default browser font size is 16px */
+  line-height: 1.6;
+  /* update to suit your type choices */
+  color: #fffdfd;
+  /* base text colour - update to suit your design */
+  background-color: #0b3c49;
+  padding: 0;
+  margin: 0;
 }
+/* #endregion */
 
-/* Improves default font styles for forms  */
-
-input,
-textarea {
-    font-family: sans-serif; /* update with Google font, web safe font and generic fallback */
-}
-
-/* box sizing */
-
+/* #region box sizing */
 * {
-    box-sizing:border-box;
+  box-sizing: border-box;
+}
+/* #endregion */
+
+/* #region flexible content images code */
+img {
+  max-width: 100%;
+  height: auto;
 }
 
-/* flexible content images code */
+.image-gallery .container-content {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+/* #endregion */
 
-img {
-    max-width: 100%;
-    height: auto;
-  }
-
-/* element styling (e.g. standard p, h1, h2, a, etc) */
+/* #region element styling (e.g. standard p, h1, h2, a, etc) */
 
 h1,
 h2 {
-    font-weight: bold;
-    letter-spacing: 0.3rem;
+  font-weight: bold;
+  letter-spacing: 0.3rem;
 }
 
 h1 {
-    font-size: 3rem;
-    margin: 0;
-    padding: 4px 10px;
+  font-size: 3rem;
+  margin: 0;
+  padding: 4px 10px;
 }
 
 h2 {
-    font-size: 2.2rem;
-    margin: 0;
-    padding: 4px 17px;
+  font-size: 2.2rem;
+  margin: 0;
+  padding: 4px 17px;
 }
 
 h3 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 4px 25px 20px 25px;
+}
+
+/* #endregion */
+
+/* #region navigation (using flexbox) */
+.page-nav {
+  background-color: #731963;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+/* small screen code */
+.page-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-p {
-    margin: 0;
-    padding: 4px 25px 20px 25px;
+.page-nav li {
+    flex: 1 1 50%;
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd;
 }
 
-/* navigation (using flexbox) */
-    .page-nav{
-        background-color: #731963;
-        position:sticky;
-        top:0;
-        width:100%;
-    }
-    .page-nav ul{
-        display:flex;
-        text-align: center;
-        margin:0;
-        justify-content: space-between;
-        padding: 0 40px;
-        flex-wrap: wrap;
-    }
+/* larger screen code */
 
-    .page-nav ul li{
-        flex: 1 1 50%;
-        display: flex;
-        list-style-type: none;
-        padding:10px;
+@media screen and (min-width: 760px) {
+    .page-nav ul {
+      flex-wrap: nowrap;
     }
-
-    .page-nav ul li+li{
-        border-bottom: 1px solid black;
-        border-left: 1px solid black;
+    .page-nav li {
+      flex: 1 1 25%;
     }
-    
+  }
 
-    .page-nav ul li a:visited, .page-nav ul li a:active, .page-nav ul li a:link{
-        text-decoration: none;
-        color: #CBD2D0;
-    }
-    .page-nav ul li a:hover{
-        text-decoration: none;
-        color: #727272;
-    }
+.page-nav ul li + li {
+  border-bottom: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+}
 
-/* page header */
+.page-nav ul li a:visited,
+.page-nav ul li a:active,
+.page-nav ul li a:link {
+    padding: 15px 10px;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 auto;
+    transition: all 0.4s ease;
+    color: #cbd2d0;
+}
+.page-nav ul li a:hover {
+  text-decoration: none;
+  background-color: #420b38;
+}
+/* #endregion */
 
-.page-header{
-    height: 400px;
-    background-image: url("../img/Optimised-Canada.jpg");
-    color: white;
+/* #region page header */
+
+.page-header {
+    background-image: url("../img/Optimised-Canada.jpg"); 
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     text-align: center;
+    background-blend-mode: multiply;
+    background-color: #3b8aa0;
     padding-top: 5px;
+    display: flex;
+    min-height: 60vh;
+    align-items: center;
+    justify-content: center;
 }
 
-.header-content{
-    background-color: rgba(11, 60, 73, 0.4);
+.header-content {
+    display: inline;
+    max-width: 500px;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
 }
 
-.header-content p, .header-content h1{
-    padding:0 35px;
+.header-content h1 {
+    padding: 0 35px;
     line-height: 1.5;
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+    line-height: 1;
 }
 
-.header-content h1{
-    font-size: 2.6em;
-}
 
-.header-content p{
-    padding:0 35px 20px 35px;
-    font-size: 1.2em;
+.header-content p {
+  padding: 0 35px 20px 35px;
+  font-size: 1.2em;
 }
 
 .page-header img {
-    border: 4px solid #ddd;
-    height:200px;
-    border-radius: 50%;
-  }
+  border: 4px solid #ddd;
+  height: 200px;
+  border-radius: 50%;
+}
 
-/* main layout */
+.header-content a {
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 10px 20px;
+  background: white;
+  color: black;
+  border-radius: 0.2em;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+}
+/* #endregion */
 
+/* #region main layout */
+
+.container-content {
+  max-width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+/* #endregion */
 
 /* styling for the section content */
 
+/* #region background colours for sections */
 
-
-/* background colours for sections */
-
-.your-topic{
-    background-color: #731963;
+.your-topic {
+  background-color: #731963;
 }
 
-/* image gallery media queries and size overrides */
+.contact-me {
+  background-color: #731963;
+}
+/* #endregion */
 
+/* #region image gallery media queries and size overrides */
 
-/* form styling */
+.image-gallery h2 {
+    text-align: center;
+}
+.image-gallery .an-image {
+    margin: 20px;
+}
 
+.image-gallery .image-caption {
+    padding: 8px 0 50px 0;
+}
 
-/* footer */
+@media screen and (min-width: 850px) {
+    .image-gallery .container-content .image-container{
+        display: flex;
+        justify-content: center;
+    }
+    .image-gallery .an-image {
+        flex: 33%;
+        padding: 20px;
+    }
+    .image-gallery .an-image+.an-image {
+        margin-left: 20px;
+   }
+}
+/* #endregion */
+
+/* #region form styling */
+
+    form label {
+        display: block;
+        /* instead of inline */
+        padding-bottom: 0.2em;
+        padding-top: 1em;
+    }
+
+    form input,form textarea {
+        padding: 0.4em 0.3em;
+        font-size: 1.2em;
+        border: 1px solid #bbb; 
+        border-radius: 0.4em;
+        min-width: 90%;
+        max-width: 90%;
+    }
+
+    form input[type="submit"] {
+        min-width:0;
+        background-color: #0b3c49;
+        border: 0;
+        border-radius: 0.2em;
+        padding: 13px 30px;
+        margin-top: 10px;
+        /* top and bottom, left and right */
+        font-size: 1em;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: white;
+        transition: background-color 0.3s ease;
+    }
+
+    form input[type="submit"]:hover {
+        background-color: #124958;
+      }
+/* #endregion */
+
+/* #region footer */
+
+.footer-content {
+  background-color: #363636;
+  display: flex;
+  height: 10vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-content a:link, .footer-content a:visited, .footer-content a:focus, .footer-content a:hover, .footer-content a:active{
+    color:#cacaca;
+}
+/* #endregion */
