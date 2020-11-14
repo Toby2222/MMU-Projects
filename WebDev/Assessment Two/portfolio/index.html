@@ -14,6 +14,7 @@
 
     <!-- your stylesheet and any other styling code, e.g. google fonts -->
     <link rel="stylesheet" href="css/layout.css">
+    <script src="https://kit.fontawesome.com/7ed4c429fc.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
 
 </head>
@@ -35,6 +36,14 @@
             <h1>Toby's Travels</h1>
             <p>This page is about me and my travels across the globe</p>
             <p><a href="#contact">Contact me</a></p>
+            <img class="codePopup" id="codePopup" src="img/snapcode.png" alt="snapcode">
+            <article class="socials">
+                <a href="https://www.instagram.com/toby.abbott22/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+                <a onclick="snapcode();"><i class="fab fa-snapchat-ghost fa-2x"></i></a>
+                <a href="https://twitter.com/TobyAbbott22"  target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+                <a href="https://www.linkedin.com/in/toby-abbott-aa5a14179/"  target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+                <a href="mailto:a.toby.2222@gmail.com"  target="_blank"><i class="far fa-envelope fa-2x"></i></a>
+            </article>
         </div>
     </header>
     <main>
@@ -84,7 +93,8 @@
         <section id="contact" class="contact-me container">
             <div class="container-content">
                 <h2>Contact Me</h2>
-
+                
+                <img class="codePopup" id="codePopup2" src="img/snapcode.png" alt="snapcode">
                 <form action="https://formspree.io/f/xqkgbrde" method="POST" target="_blank">
                     <p>
                         <label for="contact-name">Your Name</label>
@@ -104,6 +114,13 @@
                         <input type="submit" value="Send my Message"> </p>
                 </form>
             </div>
+            <article class="socials">
+                <a href="https://www.instagram.com/toby.abbott22/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+                <a onclick="snapcode2();"><i class="fab fa-snapchat-ghost fa-2x"></i></a>
+                <a href="https://twitter.com/TobyAbbott22"  target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+                <a href="https://www.linkedin.com/in/toby-abbott-aa5a14179/"  target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+                <a href="mailto:a.toby.2222@gmail.com"  target="_blank"><i class="far fa-envelope fa-2x"></i></a>
+            </article>
         </section>
     </main>
     <!-- page footer -->
@@ -120,7 +137,7 @@
             </p>
         </div>
     </footer>
-
+    <script src="JS/script.js"></script>
 </body>
 
 </html>

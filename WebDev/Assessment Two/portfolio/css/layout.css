@@ -136,7 +136,7 @@ p {
     background-image: url("https://raw.githubusercontent.com/Toby2222/MMU-Projects/main/WebDev/Assessment%20Two/portfolio/img/Optimised-Canada.jpg"); 
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
     text-align: center;
     background-blend-mode: multiply;
     background-color: #3b8aa0;
@@ -156,11 +156,12 @@ p {
 }
 
 .header-content h1 {
-    padding: 0 35px;
-    line-height: 1.5;
-    font-size: 3.5rem;
-    margin-bottom: 0.5rem;
-    line-height: 1;
+  padding: 0 35px;
+  line-height: 1.5;
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+  line-height: 1;
+
 }
 
 
@@ -297,3 +298,57 @@ p {
     color:#cacaca;
 }
 /* #endregion */
+
+.socials{
+  max-width:480px;
+  margin: 0 auto;
+
+}
+
+.socials a, .socials button{
+  background-color: transparent;
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+.socials button{
+  border:none;
+  height: 45px;
+}
+
+.socials a i, .socials button i {
+  margin-left:15px;
+  color: #bbb;
+}
+
+a[onclick]:hover{
+  cursor: pointer;
+}
+
+#codePopup, #codePopup2{
+  position: absolute;
+  width:450px;
+  height:auto;
+  left:0;
+  right:0;
+  margin-top:40px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 0.2em;
+  border: none;
+}
+
+.codePopup{
+  visibility: hidden;
+}
+
+.codePopup.appear{
+  visibility: visible;
+  animation: fade 0.7s;
+}
+
+@keyframes fade {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
