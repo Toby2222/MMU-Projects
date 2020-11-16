@@ -59,6 +59,7 @@ p {
 /* #region Nav */
 
 .page-nav {
+    transition: all 1s ease;
     background-color: rgb(115, 25, 99, 65%);
     position: sticky;
     top: 0;
@@ -121,6 +122,7 @@ p {
 /* #region Page Header */
 
 .page-header {
+    transition: all 1s ease;
     background-image: url("https://raw.githubusercontent.com/Toby2222/MMU-Projects/main/WebDev/Assessment%20Two/portfolio/img/Optimised-Canada.jpg"); 
     background-size: cover;
     background-repeat: no-repeat;
@@ -240,10 +242,12 @@ img {
 }
 
 .your-topic {
+    transition: all 1s ease;
     background-color: #731963;  
 }
 
 .contact-me {
+    transition: all 1s ease;
     background-color: #731963;
 }
 
@@ -268,6 +272,7 @@ form input,form textarea {
 }
 
 form input[type="submit"] {
+    transition: all 1s ease;
     min-width:0;
     background-color: #0b3c49;
     border: 0;
@@ -291,6 +296,7 @@ form input[type="submit"]:hover {
 /* #region Footer Styles */
 
 .page-footer {
+    transition: all 1s ease;
     background-color: #363636;
     display: flex;
     height: 10vh;
@@ -312,35 +318,43 @@ form input[type="submit"]:hover {
 }
 
 .js-modify-page .contact-me, .js-modify-page .your-topic, .js-modify-page body{
+    transition: all 1s ease;
     background-color: white;
 }
 
 .js-modify-page .page-nav, .js-modify-page .page-nav ul li a{
+    transition: all 1s ease;
     background-color: rgba(192, 185, 221,45%);
 }
 
 .js-modify-page .socials a i{
+    transition: all 1s ease;
     color:#C0B9DD;
 }
 
 .js-modify-page form input[type="submit"], .js-modify-page form input[type="submit"]:hover{
+    transition: all 1s ease;
     background-color: #C0B9DD;
 }
 
 .js-modify-page .page-footer, .js-modify-page .page-header, .js-modify-page .image-gallery, .js-modify-page .about-me {
+    transition: all 1s ease;
     background-color: #80A1D4;    
 }
 
 
 .js-modify-page .footer-content button, .js-modify-page .footer-content button:focus{
+    transition: all 1s ease;
     background-color: #0b3c49;
 }
 
 .js-modify-page .footer-content a{
+    transition: all 1s ease;
     color: #454545;
 }
   
 .js-modify-page .page-nav ul li a:hover{
+    transition: all 1s ease;
     background-color: rgba(241,153,83,10%);
 }
 
