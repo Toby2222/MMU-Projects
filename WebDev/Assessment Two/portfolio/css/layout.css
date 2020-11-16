@@ -1,84 +1,93 @@
+/* Extras listed at the bottom with the extra CSS */
+/* #region Default Styles */
 
-/* These are some suggested groupings for your stylesheet... */
 html {
-  font-size: 10px;
+    font-size: 10px;
 }
 
-/* #region Default styling styling for the body.*/
 body {
-  font-family: "Noto Sans", helvetica, sans-serif;
-  /* update with Google font, web safe font and generic fallback */
-  font-size: 1.5rem;
-  /* the default browser font size is 16px */
-  line-height: 1.6;
-  /* update to suit your type choices */
-  color: #fffdfd;
-  /* base text colour - update to suit your design */
-  background-color: #0b3c49;
-  padding: 0;
-  margin: 0;
+    /* google font with backups */
+    font-family: "Noto Sans", helvetica, sans-serif; 
+    font-size: 1.5rem;
+    /* slightly increased line height */
+    line-height: 1.6;
+    /* colour of text */
+    color: #fffdfd;
+    /* colour of background */
+    background-color: #0b3c49;
+    /* remove all padding and margin */
+    padding: 0;
+    margin: 0;
 }
-/* #endregion */
 
-/* #region box sizing */
+/* setting everything to use border box */
 * {
-  box-sizing: border-box;
-}
-/* #endregion */
-
-/* #region flexible content images code */
-img {
-  max-width: 100%;
-  height: auto;
+    box-sizing: border-box;
 }
 
-.image-gallery .container-content {
-    max-width: 1500px;
-    margin: 0 auto;
-}
-/* #endregion */
+/* default style for basic elements */
 
-/* #region element styling (e.g. standard p, h1, h2, a, etc) */
-
-h1,
-h2 {
-  font-weight: bold;
-  letter-spacing: 0.3rem;
+h1, h2 {
+    font-weight: bold;
+    letter-spacing: 0.3rem;
 }
 
 h1 {
-  font-size: 3rem;
-  margin: 0;
-  padding: 4px 10px;
+    font-size: 3rem;
+    margin: 0;
+    padding: 4px 10px;
 }
 
 h2 {
-  font-size: 2.2rem;
-  margin: 0;
-  padding: 4px 17px;
+    font-size: 2.2rem;
+    margin: 0;
+    padding: 4px 17px;
 }
 
 h3 {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 p {
-  margin: 0;
-  padding: 4px 25px 20px 25px;
+    margin: 0;
+    padding: 4px 25px 20px 25px;
 }
 
 /* #endregion */
 
-/* #region navigation (using flexbox) */
+/* #region Nav */
+
 .page-nav {
-  background-color: #731963;
-  position: sticky;
-  top: 0;
-  width: 100%;
+    background-color: rgb(115, 25, 99, 65%);
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+  
+.page-nav ul li a:visited, .page-nav ul li a:active, .page-nav ul li a:link {
+    padding: 15px 10px;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 auto;
+    transition: all 0.4s ease;
+    color: #cbd2d0;
 }
 
-/* small screen code */
+.page-nav ul li a:hover {
+    text-decoration: none;
+    background-color: rgb(66, 11, 56, 65%);
+}
+
+  /* mobile only code */
+  
+.page-nav ul li + li {
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+}
+
 .page-nav ul {
     display: flex;
     flex-wrap: wrap;
@@ -95,42 +104,21 @@ p {
     border-bottom: 1px solid #ddd;
     border-left: 1px solid #ddd;
 }
-
-/* larger screen code */
-
+    
+    /* larger screen code */
+    
 @media screen and (min-width: 760px) {
     .page-nav ul {
-      flex-wrap: nowrap;
+        flex-wrap: nowrap;
     }
     .page-nav li {
-      flex: 1 1 25%;
+        flex: 1 1 25%;
     }
-  }
-
-.page-nav ul li + li {
-  border-bottom: 1px solid #ddd;
-  border-left: 1px solid #ddd;
 }
 
-.page-nav ul li a:visited,
-.page-nav ul li a:active,
-.page-nav ul li a:link {
-    padding: 15px 10px;
-    display: flex;
-    text-decoration: none;
-    align-items: center;
-    justify-content: center;
-    flex: 1 1 auto;
-    transition: all 0.4s ease;
-    color: #cbd2d0;
-}
-.page-nav ul li a:hover {
-  text-decoration: none;
-  background-color: #420b38;
-}
 /* #endregion */
 
-/* #region page header */
+/* #region Page Header */
 
 .page-header {
     background-image: url("https://raw.githubusercontent.com/Toby2222/MMU-Projects/main/WebDev/Assessment%20Two/portfolio/img/Optimised-Canada.jpg"); 
@@ -156,73 +144,68 @@ p {
 }
 
 .header-content h1 {
-  padding: 0 35px;
-  line-height: 1.5;
-  font-size: 3.5rem;
-  margin-bottom: 0.5rem;
-  line-height: 1;
+    padding: 0 35px;
+    line-height: 1.5;
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+    line-height: 1;
 
 }
 
 
 .header-content p {
-  padding: 0 35px 20px 35px;
-  font-size: 1.2em;
+    padding: 0 35px 20px 35px;
+    font-size: 1.2em;
 }
 
 .page-header img {
-  border: 4px solid #ddd;
-  height: 200px;
-  border-radius: 50%;
+    border: 4px solid #ddd;
+    height: 200px;
+    border-radius: 50%;
 }
 
 .header-content a {
-  display: inline-block;
-  margin-top: 10px;
-  margin-right: 10px;
-  padding: 10px 20px;
-  background: white;
-  color: black;
-  border-radius: 0.2em;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1rem;
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 10px 20px;
+    background: white;
+    color: black;
+    border-radius: 0.2em;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
 }
+
 /* #endregion */
 
-/* #region main layout */
+/* #region Main Responsive Element */
 
 .container-content {
-  max-width: 550px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 10px;
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
 }
+
 /* #endregion */
 
-/* styling for the section content */
+/* #region Image Styles */
 
-/* #region background colours for sections */
-
-#about, #topic, #contact, #images{
-    padding-top: 95px;
-    padding-bottom: 70px;
+img {
+    max-width: 100%;
+    height: auto;
 }
-
-.your-topic {
-  background-color: #731963;
+  
+.image-gallery .container-content {
+    max-width: 1500px;
+    margin: 0 auto;
 }
-
-.contact-me {
-  background-color: #731963;
-}
-/* #endregion */
-
-/* #region image gallery media queries and size overrides */
 
 .image-gallery h2 {
     text-align: center;
 }
+
 .image-gallery .an-image {
     margin: 20px;
 }
@@ -236,119 +219,163 @@ p {
         display: flex;
         justify-content: center;
     }
+
     .image-gallery .an-image {
         flex: 33%;
         padding: 20px;
     }
+
     .image-gallery .an-image+.an-image {
         margin-left: 20px;
    }
 }
+
 /* #endregion */
 
-/* #region form styling */
+/* #region Section Styles */
 
-    form label {
-        display: block;
-        /* instead of inline */
-        padding-bottom: 0.2em;
-        padding-top: 1em;
-    }
-
-    form input,form textarea {
-        padding: 0.4em 0.3em;
-        font-size: 1.2em;
-        border: 1px solid #bbb; 
-        border-radius: 0.4em;
-        min-width: 90%;
-        max-width: 90%;
-    }
-
-    form input[type="submit"] {
-        min-width:0;
-        background-color: #0b3c49;
-        border: 0;
-        border-radius: 0.2em;
-        padding: 13px 30px;
-        margin-top: 10px;
-        /* top and bottom, left and right */
-        font-size: 1em;
-        text-transform: uppercase;
-        font-weight: bold;
-        color: white;
-        transition: background-color 0.3s ease;
-    }
-
-    form input[type="submit"]:hover {
-        background-color: #124958;
-      }
-/* #endregion */
-
-/* #region footer */
-
-.footer-content {
-  background-color: #363636;
-  display: flex;
-  height: 10vh;
-  align-items: center;
-  justify-content: center;
+#about, #topic, #contact, #images{
+    padding-top: 95px;
+    padding-bottom: 70px;
 }
 
+.your-topic {
+    background-color: #731963;  
+}
+
+.contact-me {
+    background-color: #731963;
+}
+
+/* #endregion */
+
+/* #region Form Styles */
+
+form label {
+    display: block;
+    /* instead of inline */
+    padding-bottom: 0.2em;
+    padding-top: 1em;
+}
+
+form input,form textarea {
+    padding: 0.4em 0.3em;
+    font-size: 1.2em;
+    border: 1px solid #bbb; 
+    border-radius: 0.4em;
+    min-width: 90%;
+    max-width: 90%;
+}
+
+form input[type="submit"] {
+    min-width:0;
+    background-color: #0b3c49;
+    border: 0;
+    border-radius: 0.2em;
+    padding: 13px 30px;
+    margin-top: 10px;
+    /* top and bottom, left and right */
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #124958;
+}
+
+/* #endregion */
+
+/* #region Footer Styles */
+
+.footer-content {
+    background-color: #363636;
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+}
+  
 .footer-content a:link, .footer-content a:visited, .footer-content a:focus, .footer-content a:hover, .footer-content a:active{
     color:#cacaca;
 }
+
+.footer-content button, .footer-content button:focus {
+    border-radius: 10px;
+    text-decoration: underline;
+    background-color: #0b3c49;
+    border-color: #0b3c49;
+    color: white;
+    padding:8px;
+    border: none;
+    margin-left: 7px;
+    outline: none;
+}
+
 /* #endregion */
 
-.socials{
-  max-width:480px;
-  margin: 0 auto;
+/* #Region JS Styles */
 
+.js-modify-page .footer-content, .js-modify-page .contact-me, .js-modify-page .your-topic, .js-modify-page body, .js-modify-page .page-nav, .js-modify-page .page-nav ul li a {
+    transition: all 1s ease;
+    color:black;
 }
 
-.socials a, .socials button{
-  background-color: transparent;
-  text-align: center;
-  margin: 0 auto;
-  padding: 10px 20px;
+.js-modify-page .contact-me, .js-modify-page .your-topic, .js-modify-page body{
+    background-color: white;
 }
 
-.socials button{
-  border:none;
-  height: 45px;
+.js-modify-page .page-nav, .js-modify-page .page-nav ul li a{
+    background-color: rgba(241,153,83,45%);
 }
 
-.socials a i, .socials button i {
-  margin-left:15px;
-  color: #bbb;
+.js-modify-page .footer-content, .js-modify-page .page-header, .js-modify-page .image-gallery, .js-modify-page .about-me {
+    background-color: #F19953;    
 }
 
-a[onclick]:hover{
-  cursor: pointer;
+
+.js-modify-page .footer-content a{
+    color: #454545;
+}
+  
+.js-modify-page .page-nav ul li a:hover{
+    background-color: rgba(241,153,83,10%);
 }
 
-#codePopup, #codePopup2{
-  position: absolute;
-  width:450px;
-  height:auto;
-  left:0;
-  right:0;
-  margin-top:40px;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 0.2em;
-  border: none;
-}
+/* #endregion */
 
-.codePopup{
-  visibility: hidden;
-}
+/* #region Extras */
 
-.codePopup.appear{
-  visibility: visible;
-  animation: fade 0.7s;
-}
+    /* social media links using font awesome icons */
+    /* time zone compensation for JS */
+    /* changed action of the 'change page' button */
+    /* styled the change page action button */
+    /* used cookies to story the users page state */
+    /* made nav slightly transparent */
+    /* Links open in new tabs */
 
-@keyframes fade {
-  from {opacity: 0;}
-  to {opacity:1 ;}
-}
+    .socials{
+        max-width:480px;
+        margin: 0 auto;
+    }
+    
+    .socials a, .socials button{
+        background-color: transparent;
+        text-align: center;
+        margin: 0 auto;
+        padding: 10px 20px;
+    }
+    
+    .socials button{
+        border:none;
+        height: 45px;
+    }
+    
+    .socials a i, .socials button i {
+        margin-left:15px;
+        color: #bbb;
+    }
+    
+    /* #endregion */
