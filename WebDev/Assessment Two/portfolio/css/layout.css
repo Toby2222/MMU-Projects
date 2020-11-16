@@ -306,7 +306,7 @@ form input[type="submit"]:hover {
 
 /* #Region JS Styles */
 
-.js-modify-page .footer-content, .js-modify-page .contact-me, .js-modify-page .your-topic, .js-modify-page body, .js-modify-page .page-nav, .js-modify-page .page-nav ul li a, .js-modify-page .socials a i {
+.js-modify-page .footer-content, .js-modify-page .contact-me, .js-modify-page .your-topic, .js-modify-page body, .js-modify-page .page-nav, .js-modify-page .page-nav ul li a, .js-modify-page .contact-me .socials a i{
     transition: all 1s ease;
     color:black;
 }
@@ -317,10 +317,13 @@ form input[type="submit"]:hover {
 
 .js-modify-page .page-nav, .js-modify-page .page-nav ul li a{
     background-color: rgba(192, 185, 221,45%);
-
 }
 
-.js-modify-page form input[type="submit"], .js-modify-page form input[type="submit"]:hover, .js-modify-page .footer-content button, .js-modify-page .footer-content button:focus{
+.js-modify-page .socials a i{
+    color:#C0B9DD;
+}
+
+.js-modify-page form input[type="submit"], .js-modify-page form input[type="submit"]:hover{
     background-color: #C0B9DD;
 }
 
@@ -328,6 +331,10 @@ form input[type="submit"]:hover {
     background-color: #80A1D4;    
 }
 
+
+.js-modify-page .footer-content button, .js-modify-page .footer-content button:focus{
+    background-color: #0b3c49;
+}
 
 .js-modify-page .footer-content a{
     color: #454545;
@@ -373,7 +380,7 @@ form input[type="submit"]:hover {
 .footer-content button, .footer-content button:focus {
     border-radius: 10px;
     text-decoration: underline;
-    background-color: #0b3c49;
+    background-color: #C0B9DD;
     color: white;
     padding:8px;
     border: none;
