@@ -54,6 +54,10 @@ p {
     padding: 4px 25px 20px 25px;
 }
 
+p a{
+    color: white;
+}
+
 /* #endregion */
 
 /* #region Nav */
@@ -299,7 +303,7 @@ form input[type="submit"]:hover {
     transition: all 1s ease;
     background-color: #363636;
     display: flex;
-    height: 10vh;
+    height: 20vh;
     align-items: center;
     justify-content: center;
 }
@@ -312,7 +316,7 @@ form input[type="submit"]:hover {
 
 /* #Region JS Styles */
 
-.js-modify-page .footer-content, .js-modify-page .contact-me, .js-modify-page .your-topic, .js-modify-page body, .js-modify-page .page-nav, .js-modify-page .page-nav ul li a, .js-modify-page .contact-me .socials a i{
+.js-modify-page .footer-content, .js-modify-page .contact-me, .js-modify-page .your-topic, .js-modify-page body, .js-modify-page .page-nav, .js-modify-page .page-nav ul li a, .js-modify-page .contact-me .socials a i, .js-modify-page p a{
     transition: all 1s ease;
     color:black;
 }
