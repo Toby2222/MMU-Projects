@@ -306,7 +306,7 @@ form input[type="submit"]:hover {
 
 /* #Region JS Styles */
 
-.js-modify-page .footer-content, .js-modify-page .contact-me, .js-modify-page .your-topic, .js-modify-page body, .js-modify-page .page-nav, .js-modify-page .page-nav ul li a {
+.js-modify-page .footer-content, .js-modify-page .contact-me, .js-modify-page .your-topic, .js-modify-page body, .js-modify-page .page-nav, .js-modify-page .page-nav ul li a, .js-modify-page .socials a i {
     transition: all 1s ease;
     color:black;
 }
@@ -316,11 +316,16 @@ form input[type="submit"]:hover {
 }
 
 .js-modify-page .page-nav, .js-modify-page .page-nav ul li a{
-    background-color: rgba(128, 155, 206,45%);
+    background-color: rgba(192, 185, 221,45%);
+
+}
+
+.js-modify-page form input[type="submit"], .js-modify-page form input[type="submit"]:hover, .js-modify-page .footer-content button, .js-modify-page .footer-content button:focus{
+    background-color: #C0B9DD;
 }
 
 .js-modify-page .page-footer, .js-modify-page .page-header, .js-modify-page .image-gallery, .js-modify-page .about-me {
-    background-color: rgb(128, 155, 206);    
+    background-color: #80A1D4;    
 }
 
 
@@ -351,19 +356,15 @@ form input[type="submit"]:hover {
     margin: 0 auto;
 }
 
-.socials a, .socials button{
+.socials a{
     background-color: transparent;
     text-align: center;
     margin: 0 auto;
     padding: 10px 20px;
 }
 
-.socials button{
-    border:none;
-    height: 45px;
-}
 
-.socials a i, .socials button i {
+.socials a i{
     margin-left:15px;
     color: #bbb;
 }
