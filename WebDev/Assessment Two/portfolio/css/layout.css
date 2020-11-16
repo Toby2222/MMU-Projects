@@ -276,7 +276,7 @@ form input[type="submit"] {
     min-width:0;
     background-color: #0b3c49;
     border: 0;
-    border-radius: 0em;
+    border-radius: 0.6em;
     padding: 13px 30px;
     margin-top: 10px;
     /* top and bottom, left and right */
@@ -332,9 +332,16 @@ form input[type="submit"]:hover {
     color:#C0B9DD;
 }
 
-.js-modify-page form input[type="submit"], .js-modify-page form input[type="submit"]:hover{
+.js-modify-page form input[type="submit"]{
     transition: all 1s ease;
+    color:black;
     background-color: #C0B9DD;
+}
+
+.js-modify-page form input[type="submit"]:hover{
+    transition: all 0.1s ease;
+    color:black;
+    background-color: #867dac;
 }
 
 .js-modify-page .page-footer, .js-modify-page .page-header, .js-modify-page .image-gallery, .js-modify-page .about-me {
@@ -346,6 +353,7 @@ form input[type="submit"]:hover {
 .js-modify-page .footer-content button, .js-modify-page .footer-content button:focus{
     transition: all 1s ease;
     background-color: #0b3c49;
+    color: white;
 }
 
 .js-modify-page .footer-content a{
@@ -395,7 +403,7 @@ form input[type="submit"]:hover {
     border-radius: 10px;
     text-decoration: underline;
     background-color: #C0B9DD;
-    color: white;
+    color: black;
     padding:8px;
     border: none;
     outline: none;
