@@ -316,11 +316,11 @@ form input[type="submit"]:hover {
 }
 
 .js-modify-page .page-nav, .js-modify-page .page-nav ul li a{
-    background-color: rgba(241,153,83,45%);
+    background-color: rgba(128, 155, 206,45%);
 }
 
-.js-modify-page .footer-content, .js-modify-page .page-header, .js-modify-page .image-gallery, .js-modify-page .about-me {
-    background-color: #F19953;    
+.js-modify-page .page-footer, .js-modify-page .page-header, .js-modify-page .image-gallery, .js-modify-page .about-me {
+    background-color: rgb(128, 155, 206);    
 }
 
 
@@ -343,6 +343,7 @@ form input[type="submit"]:hover {
     /* used cookies to story the users page state */
     /* made nav slightly transparent */
     /* Links open in new tabs */
+    /* restyled footer */
 
 .socials{
     max-width:480px;
