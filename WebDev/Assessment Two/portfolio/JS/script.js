@@ -28,7 +28,7 @@ var findLocation = document.getElementById('switch');
 var button = document.createElement('button');
 button.setAttribute('class','js-make-something-happen'); 
 button.setAttribute('id','make-something-happen');
-button.textContent='Blinding Light Mode'; 
+button.textContent='Light Mode'; 
 
 
 findLocation.append(button);
@@ -40,11 +40,11 @@ function changePage(){
   
   document.documentElement.classList.toggle('js-modify-page');
 
-  if (button.textContent == 'Blinding Light Mode'){
-    button.textContent = 'Take me back to Dark Mode';
+  if (button.textContent == 'Light Mode'){
+    button.textContent = 'Dark Mode';
     document.cookie = "false"
   } else{
-    button.textContent = 'Blinding Light Mode';
+    button.textContent = 'Light Mode';
     document.cookie = "true;"
   }
 }
@@ -58,10 +58,10 @@ window.onload = (event) => {
   console.log(document.cookie);
   if (document.cookie == "false"){
     document.documentElement.classList.add('js-modify-page');
-    button.textContent = 'Take me back to Dark Mode';
+    button.textContent = 'Dark Mode';
   } else {
     document.documentElement.classList.remove('js-modify-page');
-    button.textContent = 'Blinding Light Mode';
+    button.textContent = 'Light Mode';
   }
 };
 
