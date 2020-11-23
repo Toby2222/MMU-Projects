@@ -69,6 +69,7 @@ p a{
     position: sticky;
     top: 0;
     width: 100%;
+    z-index: 2;
 }
   
 .page-nav ul li a:visited, .page-nav ul li a:active, .page-nav ul li a:link {
