@@ -223,6 +223,7 @@ img {
 
 .image-gallery{
     position: relative;
+    max-height: 200vh;
 }
 
 @media screen and (min-width: 850px) {
@@ -388,7 +389,8 @@ form input[type="submit"]:hover {
     /* Links open in new tabs */
     /* restyled footer */
     /* made nav sticky */
-    /* clicking on the images in the gallery */
+    /* clicking on the images in the gallery enlarges them but only if viewport is big enough ie. only desktop */
+    /* added fade animation to the images in the gallery */
 
 .socials{
     max-width:480px;
@@ -438,7 +440,7 @@ form input[type="submit"]:hover {
 
 .enlargedImage{ 
     max-width: 90vw;
-    max-height:629.59px;
+    max-height:100%;
     position: absolute;
     top:0;
 
