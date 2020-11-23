@@ -437,7 +437,7 @@ form input[type="submit"]:hover {
 }
 
 .enlargedImage{ 
-    max-width: 80vw;
+    max-width: 90vw;
     max-height:629.59px;
     position: absolute;
     top:0;
