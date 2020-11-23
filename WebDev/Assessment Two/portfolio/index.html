@@ -70,9 +70,12 @@
         <!-- image gallery section containing three images -->
         <section id="images" class="image-gallery container">
             <div class="container-content">
-                <h2>Image Gallery</h2>
+                <h2 id="gallery">Image Gallery</h2>
                 <div class="image-container">
-                    <img id="enlargedImage" class="enlargedImage hide" onclick="zoom(this,'')">
+                    <div class="enlargeContainer" id="enlargeContainer">
+                        <img class="enlargedImage hide" onclick="zoom(this,'')">
+                        <button class="closeButton hide" onclick="zoom(this,'')">X</button>
+                    </div>
                     <figure class="an-image show">
                         <img src="img/Optimised-Uganda-Width.jpg" alt="Partially built brick house in Uganda" onclick="zoom(this, 'img/Original-Uganda.jpg')">
                         <figcaption class="image-caption"><p>This is from my visit to Uganda.</p></figcaption>

@@ -64,13 +64,19 @@ var viewport = window.matchMedia("(min-width: 850px)");
 
 function zoom(img, url){
   if (viewport.matches) {
-    var enlarge = document.getElementById("enlargedImage");
+    var enlarge = document.getElementById("enlargeContainer");
     var smallImages = document.getElementsByClassName("an-image");
-    enlarge.src = url;
-    enlarge.alt = img.alt;
-    enlarge.classList.toggle('show');
-    enlarge.classList.toggle('hide');
-    console.log(smallImages);
+    var galleryTitle = document.getElementById("gallery");
+    console.log(enlarge.firstChild);
+    enlarge.children[0].src = url;
+    enlarge.children[0].alt = img.alt;
+    galleryTitle.classList.toggle('show');
+    galleryTitle.classList.toggle('hide');
+    for (i = 0; i < enlarge.children.length; i++){
+      enlarge.children[i].classList.toggle('show');
+      enlarge.children[i].classList.toggle('hide');
+
+  }
     for (i = 0; i < smallImages.length; i++){
         smallImages[i].classList.toggle('hide');
         smallImages[i].classList.toggle('show');
