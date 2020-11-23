@@ -221,6 +221,10 @@ img {
     padding: 8px 0 50px 0;
 }
 
+.image-gallery{
+    position: relative;
+}
+
 @media screen and (min-width: 850px) {
     .image-gallery .container-content .image-container{
         display: flex;
@@ -384,6 +388,7 @@ form input[type="submit"]:hover {
     /* Links open in new tabs */
     /* restyled footer */
     /* made nav sticky */
+    /* clicking on the images in the gallery */
 
 .socials{
     max-width:480px;
@@ -421,5 +426,27 @@ form input[type="submit"]:hover {
 .footer-content{
     max-width: 80%;
 }
+
+.show{
+    visibility: visible;
+    animation: fade 2s;
+}
+
+.hide{
+    visibility: hidden;
+}
+
+.enlargedImage{ 
+    max-width: 80vw;
+    max-height:629.59px;
+    position: absolute;
+    top:0;
+
+}
+
+@keyframes fade {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
     
     /* #endregion */

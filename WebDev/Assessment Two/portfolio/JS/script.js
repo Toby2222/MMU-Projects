@@ -59,4 +59,19 @@ window.addEventListener('load',
   },
   
   );
-  
+
+
+function zoom(img, url){
+  var enlarge = document.getElementById("enlargedImage");
+  var smallImages = document.getElementsByClassName("an-image");
+  enlarge.src = url;
+  enlarge.alt = img.alt;
+  enlarge.classList.toggle('show');
+  enlarge.classList.toggle('hide');
+  console.log(smallImages);
+  for (i = 0; i < smallImages.length; i++){
+      smallImages[i].classList.toggle('hide');
+      smallImages[i].classList.toggle('show');
+
+  }
+}
