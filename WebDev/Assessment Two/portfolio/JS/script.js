@@ -8,7 +8,7 @@ currenthour += offset;
 var emailmessage = "I am awake, feel free to email me";
 
 if (currenthour < 9 || currenthour >= 22) {
-  emailmessage = "I am asleep, please avoid emailing me currently";
+  emailmessage = "I am asleep, please don't email me";
 }
 
 var getheading = document.querySelector(".contact-me h2");
@@ -30,7 +30,7 @@ var listenForInteraction = document.getElementById('make-something-happen');
 
 
 function changePage() {
-
+  
   document.documentElement.classList.toggle('js-modify-page');
 
   if (button.textContent === 'Light Mode') {
@@ -56,6 +56,7 @@ window.addEventListener('load',
       document.documentElement.classList.remove('js-modify-page');
       button.textContent = 'Light Mode';
     }
-  }
-);
-
+  },
+  
+  );
+  
