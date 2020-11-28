@@ -13,6 +13,7 @@
     /* positioned the enlarged images using a fixed position*/
     /* gave nav a z-index to ensure it remains in front of everything else */
     /* used css animations */
+    /* added to the mailto to include a template subject and body */
 
 /* #region Default Styles */
 
@@ -437,9 +438,15 @@ form input[type="submit"]:hover {
 .show{
     visibility: visible;
     animation: fade 2s;
+    display: block;
 }
 
 .hide{
+    visibility: hidden;
+    display: none;
+}
+
+.invisible{
     visibility: hidden;
 }
 

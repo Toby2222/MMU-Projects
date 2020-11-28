@@ -78,7 +78,7 @@ function zoom(img, url){
 
   }
     for (i = 0; i < smallImages.length; i++){
-        smallImages[i].classList.toggle('hide');
+        smallImages[i].classList.toggle('invisible');
         smallImages[i].classList.toggle('show');
     }
   }
