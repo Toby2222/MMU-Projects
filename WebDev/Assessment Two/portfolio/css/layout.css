@@ -1,4 +1,19 @@
-/* Extras listed at the bottom with the extra CSS */
+/* Extra CSS listed below, extra code is at the bottom of the stylesheet */
+    /* social media links using font awesome icons */
+    /* time zone compensation for JS */
+    /* changed action of the 'change page' button */
+    /* added a light theme as started in a dark theme originally */
+    /* styled the change page action button */
+    /* used cookies to store the users page state */
+    /* Links open in new tabs */
+    /* restyled footer */
+    /* made nav sticky */
+    /* clicking on the images in the gallery enlarges them but only if viewport is big enough ie. only desktop */
+    /* added fade animation to the images in the gallery */
+    /* positioned the enlarged images using a fixed position*/
+    /* gave nav a z-index to ensure it remains in front of everything else */
+    /* used css animations */
+
 /* #region Default Styles */
 
 html {
@@ -381,18 +396,6 @@ form input[type="submit"]:hover {
 
 /* #region Extras */
 
-    /* social media links using font awesome icons */
-    /* time zone compensation for JS */
-    /* changed action of the 'change page' button */
-    /* styled the change page action button */
-    /* used cookies to story the users page state */
-    /* made nav slightly transparent */
-    /* Links open in new tabs */
-    /* restyled footer */
-    /* made nav sticky */
-    /* clicking on the images in the gallery enlarges them but only if viewport is big enough ie. only desktop */
-    /* added fade animation to the images in the gallery */
-    /* gave nav a z-index to ensure it remains in front of everything else */
 
 .socials{
     max-width:480px;
