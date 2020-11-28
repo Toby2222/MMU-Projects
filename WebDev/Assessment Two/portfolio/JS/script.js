@@ -30,7 +30,7 @@ var listenForInteraction = document.getElementById('make-something-happen');
 
 
 function changePage() {
-  
+
   document.documentElement.classList.toggle('js-modify-page');
 
   if (button.textContent === 'Light Mode') {
@@ -49,7 +49,7 @@ listenForInteraction.addEventListener('keydown', changePage);
 
 window.addEventListener('load',
   function checkCookies() {
-    if (document.cookie == "false"){
+    if (document.cookie === "false"){
       document.documentElement.classList.add('js-modify-page');
       button.textContent = 'Dark Mode';
     } else {
@@ -58,7 +58,7 @@ window.addEventListener('load',
     }
   },
   
-  );
+);
 
 var viewport = window.matchMedia("(min-width: 850px)");
 
@@ -67,7 +67,6 @@ function zoom(img, url){
     var enlarge = document.getElementById("enlargeContainer");
     var smallImages = document.getElementsByClassName("an-image");
     var galleryTitle = document.getElementById("gallery");
-    console.log(enlarge.firstChild);
     enlarge.children[0].src = url;
     enlarge.children[0].alt = img.alt;
     galleryTitle.classList.toggle('show');
