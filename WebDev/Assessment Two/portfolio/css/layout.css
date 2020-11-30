@@ -145,7 +145,7 @@ p a{
 
 .page-header {
     transition: all 1s ease;
-    background-image: url("https://raw.githubusercontent.com/Toby2222/MMU-Projects/main/WebDev/Assessment%20Two/portfolio/img/Optimised-Canada.jpg"); 
+    background-image: url("../img/optimised-canada.jpg"); 
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
