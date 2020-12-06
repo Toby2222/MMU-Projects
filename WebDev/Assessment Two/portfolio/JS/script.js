@@ -63,7 +63,6 @@ window.addEventListener('load',
       button.textContent = 'Light Mode';
     }
   },
-  
 );
 
 var viewport = window.matchMedia("(min-width: 850px)");
