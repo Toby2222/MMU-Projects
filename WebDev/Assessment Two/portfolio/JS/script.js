@@ -2,6 +2,12 @@ var currenttime = new Date();
 var currenthour = currenttime.getHours();
 var offsetMins = currenttime.getTimezoneOffset();
 var offset = offsetMins / 60;
+if (currenthour === 0 && offset < 0){
+  currenthour = 24;
+}
+if (offset > 0 && currenthour > 20){
+  currenthour = currenthour - 24;
+}
 
 currenthour += offset;
 
